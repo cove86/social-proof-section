@@ -1,3 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

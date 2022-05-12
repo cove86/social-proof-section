@@ -9,12 +9,19 @@ html {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 144rem;
   margin: 0 auto;
-  /* border: 1px solid black; */
-  background-image: url('/images/bg-pattern-top-desktop.svg');
+  background-image: url('/images/bg-pattern-top-desktop.svg'),
+    url('/images/bg-pattern-bottom-desktop.svg');
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
+  background-size: auto, 65%;
   font-family: 'League Spartan', sans-serif;
+}
+
+.social-section {
+  margin: 0 auto;
+  width: 95rem;
 }
 
 .top-section {
@@ -26,7 +33,7 @@ html {
 
 .title {
   width: 45rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 
   color: hsl(300, 43%, 22%);
 }
@@ -77,6 +84,7 @@ html {
 .testimonial-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .testimonial-card {

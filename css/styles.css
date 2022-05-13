@@ -53,17 +53,19 @@ html {
   line-height: 1.4;
 }
 
-.ratings p:nth-child(2) {
+.ratings span:nth-child(2) {
   margin-left: 5rem;
 }
 
-.ratings p:nth-child(3) {
+.ratings span:nth-child(3) {
   margin-left: 10rem;
 }
 
 .rating {
   display: inline-flex;
   align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 4rem;
   font-size: 1.5rem;
   color: hsl(300, 43%, 22%);
   font-weight: bold;
@@ -74,12 +76,9 @@ html {
   width: 40rem;
 }
 
-.star-icon {
-  margin-right: 1rem;
-}
-
-.star-icon:last-child {
-  margin-right: 4rem;
+.stars {
+  display: inline-flex;
+  gap: 0.75rem;
 }
 
 .testimonial-section {
@@ -184,16 +183,18 @@ html {
     flex-direction: column;
   }
 
-  .ratings p:nth-child(2) {
+  .ratings span:nth-child(2) {
     margin-left: 0rem;
   }
 
-  .ratings p:nth-child(3) {
+  .ratings span:nth-child(3) {
     margin-left: 0rem;
   }
 
   .rating {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .testimonial-section {

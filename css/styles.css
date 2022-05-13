@@ -16,6 +16,7 @@ html {
     url('/images/bg-pattern-bottom-desktop.svg');
   background-position: left top, right bottom;
   background-repeat: no-repeat;
+  background-size: auto, 80%;
   font-family: 'League Spartan', sans-serif;
 }
 
@@ -143,8 +144,71 @@ html {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width < 144rem) {
+@media only screen and (max-width: 62.5rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
   .container {
-    background-size: 80%, 80%;
+    max-width: 10rem;
+    max-height: fit-content;
+  }
+
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratings p:nth-child(2) {
+    margin-left: 0rem;
+  }
+
+  .ratings p:nth-child(3) {
+    margin-left: 0rem;
+  }
+
+  .rating {
+    display: flex;
+  }
+
+  .testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+
+  .testimonial-card:nth-child(2) {
+    margin-top: 0rem;
+  }
+
+  .testimonial-card:nth-child(3) {
+    margin-top: 0rem;
   }
 }

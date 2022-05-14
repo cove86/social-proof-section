@@ -151,14 +151,12 @@ html {
 
 @media only screen and (max-width: 760px) {
   .container {
-    /* max-width: 10rem; */
     max-height: fit-content;
 
     background-image: url('/images/bg-pattern-top-mobile.svg'),
       url('/images/bg-pattern-bottom-mobile.svg');
     background-position: left top, right bottom;
     background-repeat: no-repeat;
-    /* background-size: auto, 80%; */
   }
 
   .social-section {

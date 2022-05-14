@@ -22,7 +22,7 @@ html {
 
 .social-section {
   margin: 0 auto;
-  width: 95rem;
+  max-width: 95rem;
 }
 
 .top-section {
@@ -151,8 +151,14 @@ html {
 
 @media only screen and (max-width: 760px) {
   .container {
-    max-width: 10rem;
+    /* max-width: 10rem; */
     max-height: fit-content;
+
+    background-image: url('/images/bg-pattern-top-mobile.svg'),
+      url('/images/bg-pattern-bottom-mobile.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    /* background-size: auto, 80%; */
   }
 
   .social-section {
@@ -160,7 +166,6 @@ html {
     flex-direction: column;
     align-items: center;
 
-    width: 10rem;
     margin-bottom: 2rem;
   }
 
